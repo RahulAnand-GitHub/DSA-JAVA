@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SieveOfEratosthenes {
     public static void main(String[] args){
-        int n = 20;
+        int n = 40;
         getPrime(n);
 
     }
@@ -15,7 +15,7 @@ public class SieveOfEratosthenes {
 
         for ( int i = 2 ; i*i <=n ; i++ ) {
             if(arr[i]) {
-                for ( int j = 2*i ; j <= n ; j = j+i ) {
+                for ( int j = i*i ; j <= n ; j = j+i ) {
                     arr[j] = false;
                 }
             }
