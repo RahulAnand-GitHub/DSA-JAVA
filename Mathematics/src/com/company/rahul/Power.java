@@ -9,14 +9,14 @@ public class Power {
     }
 
     public static int getPower(int n, int p) {
-//        Naive Sulution
+//        Naive Solution
 
 //        int result = 1;
 //        for ( int i = 0 ; i <p ; i++ )
 //            result *=n;
 //        return result;
 
-//        Recursive Sulotion
+//        Recursive Solution
 //        if(p==0)
 //            return 1;
 //        int temp = getPower(n, p/2);
@@ -24,7 +24,7 @@ public class Power {
 //        if(p%2==0)  return temp;
 //        else    return temp * n;
 
-//        Iterative Solution with time complexit: O(log n)
+//        Iterative Solution with time complexity: O(log n)
         int result = 1;
         while(p > 0){
             if( p % 2 != 0)
